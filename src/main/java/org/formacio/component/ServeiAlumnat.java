@@ -5,10 +5,11 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class ServeiAlumnat{
+public class ServeiAlumnat {
 	
 	@Autowired
 	private RepositoriAlumnes alumnes;
+
 	/**
 	 * ha de donar d'alta a la base de dades d'alumnes l'alumne indicat amb 
 	 * el corresponent codi.
@@ -20,7 +21,11 @@ public class ServeiAlumnat{
 			return false;
 		} else {
 			alumnes.altaAlumne(id, alumne);
-			return true;
+		}
+		return true;
 	}
-	}
+
 }
+
+
+
