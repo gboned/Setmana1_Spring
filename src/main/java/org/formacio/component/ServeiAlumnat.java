@@ -33,6 +33,10 @@ public class ServeiAlumnat {
 		alumnes.altaAlumne(2, "Joan");
 	}
 
+	public int size() {
+		return alumnes.llistaAlumnes().size();
+	}
+
 }
 
 
